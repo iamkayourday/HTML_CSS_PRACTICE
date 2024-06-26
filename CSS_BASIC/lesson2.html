@@ -9,10 +9,14 @@
             background-color: black;
             color: white;
             height: 36px;
-            width: 100px;
+            width: 110px;
             border-style: none;
             font-size: 12px;
+            transition: background-color 0.15s;
             cursor: pointer;
+        }
+        .uber-button:hover {
+            opacity: 0.7;
         }
         .Amazon-button {
             background-color: rgb(255, 216, 20);
@@ -24,6 +28,9 @@
             font-size: 13px;
             cursor: pointer;
         }
+        .Amazon-button:hover {
+            background-color:  rgb(210, 177, 14);
+        }
         .Github-button {
             background-color: rgb(59, 184, 95);
             color: white;
@@ -34,7 +41,106 @@
             width: 90px;
             cursor: pointer;
         }
-
+        .Github-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15s) ;
+        }
+        .Get-started-button {
+            background-color: rgb(121, 82, 179);
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            border-style: none;
+            height: 36px;
+            width: 110px;
+            cursor: pointer;
+        }
+        .Get-started-button:hover {
+            background-color: rgb(103, 59, 169);
+        }
+        .Download-button {
+            background-color: white;
+            color: rgb(108, 117, 125);
+            font-weight: bold;
+            border-radius: 4px;
+            border-style: solid;
+            border-color: rgb(108, 117, 125);
+            height: 36px;
+            width: 100px;
+            margin-left: 5px;
+            transition: background-color 0.15s, color 0.15s;
+            cursor: pointer;
+        }
+        .Download-button:hover {
+            background-color: rgb(108, 117, 125);
+            color: white;
+        }
+        .Linkedln-button {
+            background-color: rgb(10, 102, 194);
+            color: white;
+            font-weight: bold;
+            border-style: none;
+            border-radius: 18px;
+            height: 36px;
+            width: 210px;
+            cursor: pointer;
+        }
+        .Linkedln-button:hover {
+            background-color: rgb(7, 75, 143);
+        }
+        .Save-button {
+            background-color: white;
+            color: rgb(10, 102, 194);
+            border-color: rgb(10, 102, 194);
+            border-style: solid;
+            border-radius: 18px;
+            height: 36px;
+            width: 73px;
+        }
+        .Save-button:hover {
+            border-width: 3px;
+        }
+        a {
+            color: rgb(0, 113, 133);
+        }
+        a:hover {
+            color: orange;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .stock {
+            color: rgb(0, 118, 0);
+            font-weight: bold;
+        }
+        .Add {
+            background-color: rgb(225, 216, 20);
+            border-style: none;
+            border-radius: 14px;
+            height: 28px;
+            width: 110px;
+            margin-right: 7px;
+            cursor: pointer;
+        }
+        .Add:hover {
+            background-color:  rgb(210, 177, 14);
+        }
+        .Add:active {
+            opacity: 0.7;   
+        }
+        .buy {
+            background-color:  rgb(225, 164, 28);
+            border-radius: 18px;
+            border-style: none;
+            height: 28px;
+            width: 110px;
+            cursor: pointer;
+        }
+        .buy:hover {
+            background-color: rgb(163, 116, 15);
+        }
+        .buy:active {
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
@@ -47,10 +153,23 @@
     <button class="Amazon-button">
         Add to Cart
     </button> <br><br>
-    <!-- GitHub -->
+    <!-- 2C GitHub -->
     <button class="Github-button">Sign up</button><br><br>
-    <!--2C Bootstrap -->
-    <button>Get started</button>
-    <button>Download</button>
+    <!--2D Bootstrap -->
+    <button class="Get-started-button">Get started</button>
+    <button class="Download-button">Download</button><br><br>
+    <!-- 2E Linkedln -->
+    <button class="Linkedln-button">Apply on company website</button>
+    <button class="Save-button">Save</button><br><br><br>
+
+
+    <!-- 1G:CHALLENGE EXCERCISE--Try to copy th design using HTML (the link goes to Amazon) -->
+    <!-- 2F design challenge 1G -->
+    <a href="https://www.amazon.com/">Back to Amazon</a>
+    <h1><p>Nike Black Running Shoes</p></h1>
+    <p class="stock">$39- in stock</p>
+    <p>Free delivery tomorrow.</p>
+    <button class="Add">Add to Cart</button>
+    <button class="buy">Buy now</button>
 </body>
 </html>
